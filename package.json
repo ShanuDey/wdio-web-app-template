@@ -1,0 +1,22 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@wdio/allure-reporter": "^7.25.1",
+        "@wdio/cli": "^7.25.1",
+        "@wdio/cucumber-framework": "^7.25.1",
+        "@wdio/local-runner": "^7.25.1",
+        "@wdio/spec-reporter": "^7.25.1",
+        "allure-commandline": "^2.18.1",
+        "chromedriver": "^106.0.1",
+        "geckodriver": "^3.0.2",
+        "wdio-chromedriver-service": "^8.0.0",
+        "wdio-geckodriver-service": "^4.0.0"
+    },
+    "scripts": {
+        "local:chrome": "wdio run ./config/local/wdio.chrome.conf.js",
+        "local:firefox": "wdio run ./config/local/wdio.firefox.conf.js",
+        "ci": "wdio run ./config/ci/wdio.all.conf.js"
+    }
+}
