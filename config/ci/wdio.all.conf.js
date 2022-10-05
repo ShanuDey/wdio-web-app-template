@@ -1,7 +1,9 @@
-const {config} = require("../wdio.shared.conf");
+const { config } = require("../wdio.shared.conf");
 
 exports.config = {
   ...config,
+  // Level of logging verbosity: trace | debug | info | warn | error | silent
+  logLevel: "error",
   capabilities: [
     {
       // maxInstances can get overwritten per capability. So if you have an in-house Selenium
